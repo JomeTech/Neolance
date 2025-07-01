@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neolance-dark text-white font-sans overflow-x-hidden;
+    background: linear-gradient(to bottom, #060724, #0A0A2A, #14122F);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-neolance-cyan/30 text-white;
+  }
+}
+
+@layer components {
+  .glow-text {
+    text-shadow: 0 0 10px rgba(0, 230, 246, 0.5), 0 0 20px rgba(0, 230, 246, 0.3);
+  }
+
+  .glow-border {
+    @apply border-neolance-cyan animate-glow;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-neolance-blue to-neolance-cyan text-white font-medium py-3 px-6 rounded-lg 
+    transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,230,246,0.5)] hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-neolance-cyan text-white font-medium py-3 px-6 rounded-lg 
+    transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,230,246,0.5)] hover:bg-neolance-cyan/10 active:scale-95;
+  }
+
+  .card-hover {
+    @apply transition duration-300 hover:translate-y-[-8px] hover:shadow-[0_0_15px_rgba(0,230,246,0.3)];
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-7xl mx-auto;
+  }
+
+  .nav-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-[-4px] h-[2px] w-0 bg-neolance-cyan transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active::after {
+    @apply w-full;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neolance-dark-blue;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neolance-purple/40 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neolance-purple/60;
+}
+
+.cursor-glow {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0, 230, 246, 0.3) 0%, rgba(0, 230, 246, 0) 70%);
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s;
+}
