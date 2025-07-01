@@ -70,11 +70,7 @@ const Footer: React.FC = () => {
                   Portfolio
                 </Link>
               </li>
-              <li>
-                <Link to="/referral" className="text-gray-400 hover:text-neolance-cyan transition-colors">
-                  Referral Program
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/contact" className="text-gray-400 hover:text-neolance-cyan transition-colors">
                   Contact Us
