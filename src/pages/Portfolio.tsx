@@ -54,10 +54,19 @@ const projects = [
     title: "Puriflow",
     category: "UI/UX Design",
     image:
-      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.MM2UqoDdth7QpkwSoK8ZTwHaE7%26cb%3Diwc2%26pid%3DApi&f=1&ipt=26dcf924fa9f0f805f7af1a6ed549c8f4856742f9b6ae780aecf8942e931360b&ipo=images",
+      "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1600",
     description: "Puriflow is a water business company which based on africa",
     technologies: ["UI/UX", "Figma"],
     client: "Puriflow",
+    demoUrl: "#",
+  },
+  {
+    title: "SWARAM",
+    category: "Web Developement",
+    description:
+      "Swaram is a cultural fest which is conducted in kongu engineering college",
+    technologies: ["UI/UX", "Figma", "React", "Tailwind"],
+    client: "Swaram team",
     demoUrl: "#",
   },
 ];
