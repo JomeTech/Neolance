@@ -50,6 +50,16 @@ const projects = [
     client: "Iwood Technologies",
     demoUrl: "#",
   },
+  {
+    title: "Puriflow",
+    category: "UI/UX Design",
+    image:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.MM2UqoDdth7QpkwSoK8ZTwHaE7%26cb%3Diwc2%26pid%3DApi&f=1&ipt=26dcf924fa9f0f805f7af1a6ed549c8f4856742f9b6ae780aecf8942e931360b&ipo=images",
+    description: "Puriflow is a water business company which based on africa",
+    technologies: ["UI/UX", "Figma"],
+    client: "Puriflow",
+    demoUrl: "#",
+  },
 ];
 
 const Portfolio: React.FC = () => {
